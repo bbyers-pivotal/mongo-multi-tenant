@@ -1,0 +1,9 @@
+---
+env:
+    SPRING_PROFILES_DEFAULT: cloud
+applications:
+- name: mongodb-test
+  memory: 512M
+  path: ./build/libs/mongo-0.0.1-SNAPSHOT.jar
+  services:
+    - mongo

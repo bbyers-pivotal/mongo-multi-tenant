@@ -16,7 +16,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot' 
 
 jar {
-	baseName = 'demo'
+	baseName = 'mongo'
 	version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
@@ -30,7 +30,6 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-cloud-connectors')
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.codehaus.groovy:groovy')
